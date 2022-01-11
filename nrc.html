@@ -50,8 +50,21 @@
             left: 50%;
             color: white;
             text-shadow: 2px 2px 8px #030303;
-            font-size: 30px;
+            font-size: 40px;
+            font-weight: bold;
             transform: translate(-50%, -50%);
+        }
+
+            @media (max-width:576px) {
+            .centered{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            text-shadow: 2px 2px 8px #030303;
+            font-size: 25px;
+            transform: translate(-50%, -50%);
+              } 
         }
     </style>
 </head>
@@ -129,9 +142,10 @@
                     <li class="dropdown"><a class="active" href="#"><span>About Fareast</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="board_of_director.html">Board of Directors</a></li>
-                            <li class="dropdown"><a href="audit_committee.html"><span>Audit Committee</span></a></li>
-                            <li class="dropdown"><a href="nrc.html">NRC</a></li>
-                            <li class="dropdown"><a href="#">Message from CEO</a></li>
+                            <li><a href="audit_committee.html">Audit Committee</a></li>
+                            <li><a href="nrc.html">NRC</a></li>
+                            <li><a href="chairman_msg.html">Message from Chairman</a></li>
+                            <li><a href="ceo_msg.html">Message from CEO</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Products</a></li>
@@ -167,15 +181,15 @@
 
     <main id="main">
             
-        <div class="con">
-            <img src="assets/img/banner/b.jpg" alt="board of director" style="width:100%; height: 150px;">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <h1 class="text-white centered text-center">NOMINATION & REMUNERATION COMMITTEE</h1>
-                </div>
+    <div class="con">
+        <img src="assets/img/banner/board_of_director.jpg" alt="board of director" style="width:100%; height: 200px;">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h1 class="text-white centered">Nomination and Remuneration Committee (NRC)</h1>
             </div>
-            <div class="centered"> </div>
         </div>
+        <div class="centered"> </div>
+    </div>
 
         <!-- <img class="w-100" style="height: 200px;"  src="assets/img/banner/nrc.jpg" alt="board of director"> -->
 
@@ -187,7 +201,7 @@
              <div class="row mt-5">
 
                 <div class="col-md-3 col-sm-12 text-center">
-                    <div class="shadow p-2 mb-5 bg-body rounded">
+                    <div class="shadow p-2 mb-5 bg-body rounded hover-zoom" style="overflow: hidden;">
                         <img class="w-100 h-100" style="height: 300px; width: 245px;" src="assets/img/director/Mofazzal.jpg" alt="Mofazzal">
                     </div>
                 </div>
@@ -218,7 +232,7 @@
              <div class="row mt-5">
 
                 <div class="col-md-3 col-sm-12 text-center">
-                    <div class="shadow p-2 mb-5 bg-body rounded">
+                    <div class="shadow p-2 mb-5 bg-body rounded hover-zoom" style="overflow: hidden;">
                         <img class="w-100 h-100" style="height: 300px; width: 245px;" src="assets/img/director/Sanaullah.jpg" alt="Sanaullah">
                     </div>
                 </div>
@@ -253,7 +267,7 @@
     <div class="row mt-5">
 
         <div class="col-md-3 col-sm-12 text-center">
-            <div class="shadow p-2 mb-5 bg-body rounded">
+            <div class="shadow p-2 mb-5 bg-body rounded hover-zoom" style="overflow: hidden;">
                 <img class="w-100 h-100" style="height: 300px; width: 245px;" src="assets/img/director/Khalad.jpg" alt="Colonel Gazi Mr. Khalid Hossain, PSC (Retd)">
             </div>
         </div>
@@ -284,7 +298,7 @@
     <div class="row mt-5">
 
         <div class="col-md-3 col-sm-12 text-center">
-            <div class="shadow p-2 mb-5 bg-body rounded">
+            <div class="shadow p-2 mb-5 bg-body rounded hover-zoom" style="overflow: hidden;">
                 <img class="w-100 h-100" style="height: 300px; width: 245px;" src="assets/img/director/jikrul.jpg" alt="MD. ZIKRUL HOQUE">
             </div>
         </div>
@@ -313,7 +327,7 @@
     <div class="row mt-5">
 
         <div class="col-md-3 col-sm-12 text-center">
-            <div class="shadow p-2 mb-5 bg-body rounded">
+            <div class="shadow p-2 mb-5 bg-body rounded hover-zoom" style="overflow: hidden;">
                 <img class="w-100 h-100" style="height: 300px; width: 245px;" src="assets/img/director/Secretary.jpg" alt="Secretary">
             </div>
         </div>
