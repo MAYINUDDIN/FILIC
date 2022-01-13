@@ -170,6 +170,7 @@
                             <li><a href="premium_calculator.html">Premium Calculator</a></li>
                             <li><a href="pay_premium.html">Pay Premium</a></li>
                             <li><a href="sms.html">SMS</a></li>
+
                         </ul>
                     </li>
 
@@ -189,8 +190,7 @@
             <img src="assets/img/banner/b.jpg" alt="board of director" style="width:100%; height: 140px;">
             <div class="row">
                 <div class="col-md-12 col-sm-12 container">
-                    <h1 class="text-white centered"> <span>ONLINE</span>
-                        POLICY STATEMENT</h1>
+                    <h1 class="text-white centered">PAY PREMIUM</h1>
                 </div>
             </div>
             <div class="centered"> </div>
@@ -203,28 +203,48 @@
             <div class="shadow-lg p-5 mb-5 bg-body rounded">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <img class="w-100" src="assets/img/icon/policy.jpg" alt="policy_statement">
+                        <img class="w-100" src="assets/img/icon/pay_premium.jpg" alt="premium_calculator">
                     </div>
                     <div class="col-md-5 mt-5">
                         <form action="#" method="POST">
-                            <input type="hidden" name="_token" value="NcE287UmVgBjfmYUSAWWXITeIuwe3JIKJWPaU8Pi">
-                            <div class="form-group">
-                                <input type="number" name="po_n" class="form-control" style="height: 45px;"
-                                    placeholder="Enter Policy Number" required>
+                            <div class="form-group mt-3">
+                                <input id="name" placeholder="Enter Your Name" type="text"
+                                    class="form-control form-control-lg" id="exampleInputEmail1" required>
                             </div>
-                            <br />
-                            <div class="form-group">
-                                <input type="date" class="form-control" style="height: 45px;" placeholder="Date">
+
+                            <div class="form-group mt-3">
+                                <input id="mob_no" placeholder="Enter Mobile Number" type="number"
+                                    class="form-control form-control-lg" id="exampleInputEmail1" required>
                             </div>
-                            <br />
-                            <div class="form-group">
-                                <input type="number" class="form-control" style="height: 45px;"
-                                    placeholder="Mobile number">
+
+                            <div class="form-group mt-3">
+                                <input id="pol_no" placeholder="Enter Policy Number" type="number"
+                                    class="form-control form-control-lg" id="exampleInputEmail1" required>
                             </div>
+
+                            <div class="form-group mt-3">
+                                <input id="Amt." placeholder="Amount" type="number" class="form-control form-control-lg"
+                                    id="exampleInputEmail1" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <select class="form-control form-control-lg" name="" id="term">
+                                    <option value="0">Please Select Gateway</option>
+                                    <option value="0">Bkash</option>
+                                    <option value="0">Bank</option>
+                                    <option value="0">Card</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group mt-3">
+                                <span class="input-group-text">Note</span>
+                                <textarea style="height: 100px;" class="form-control"
+                                    aria-label="With textarea"></textarea>
+                            </div>
+
                             <br>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-success font-weight-bold align-center rounded"
-                                    style="width: 150px;">Confirm</button>
+                                    style="width: 150px; ">Confirm</button>
                             </div>
                         </form>
                     </div>
