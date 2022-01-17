@@ -90,7 +90,6 @@
                     <a href="index.html"> <img style="height: 85px;" src="fareasticon.png" alt="fareast"></a>
                 </div>
 
-
                 <div class="col-lg-2 col-md-2 col-sm-6 justify-content-center mt-4">
 
                     <h6>
@@ -105,8 +104,6 @@
 
 
                 </div>
-
-
 
                 <div class="col-lg-3 col-md-3 col-sm-6 float-right mt-3">
                     <div class="shadow-sm bg-white rounded p-2  bg-danger justify-content-center"
@@ -140,10 +137,12 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="index.html"><i style="margin-right: 4px;" class="bi bi-house-door"></i>Home</a>
+                    <li><a class="active" href="index.html"><i style="margin-right: 4px;"
+                                class="bi bi-house-door"></i>Home</a>
                     </li>
                     <li class="dropdown"><a href="#"><span>About Fareast</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
+                            <li><a href="about_us.html">About Us</a></li>
                             <li><a href="board_of_director.html">Board of Directors</a></li>
                             <li><a href="audit_committee.html">Audit Committee</a></li>
                             <li><a href="nrc.html">NRC</a></li>
@@ -155,26 +154,30 @@
                     <li class="dropdown"><a href="#"><span>Financial Information</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#">Financial Statement</a></li>
-                            <li class="dropdown"><a href="#"><span>Annual Report</span></a></li>
-                            <li class="dropdown"><a href="#">NRC</a></li>
-                            <li class="dropdown"><a href="#">Message from Chairman</a></li>
-                            <li class="dropdown"><a href="#">Message from CEO</a></li>
+                            <li><a href="financial_statement.html">Financial Statement</a></li>
+                            <li><a href="#">Annual Report</a></li>
+                            <li><a href="#">Director's Report</a></li>
                         </ul>
                     </li>
 
-                    <li class="dropdown"><a class="active" href="#"><span>Digital Insurance</span> <i
+                    <li class="dropdown"><a href="#"><span>Digital Insurance</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="policy_statement.html">Policy Statement</a></li>
                             <li><a href="premium_calculator.html">Premium Calculator</a></li>
                             <li><a href="pay_premium.html">Pay Premium</a></li>
                             <li><a href="sms.html">SMS</a></li>
+                            <li><a href="digital_activities.html">Digital Activities</a></li>
                         </ul>
                     </li>
 
                     <li><a href="#">Office Information</a></li>
-                    <li><a href="#">Notice</a></li>
+                    <li class="dropdown"><a href="#"><span>Notice</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Unsettled Claim Information</a></li>
+                            <li><a href="#">General Notice</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -186,7 +189,9 @@
     <main id="main">
 
         <div class="con">
+            <!-- Image for policy staement -->
             <img src="assets/img/banner/b.jpg" alt="board of director" style="width:100%; height: 140px;">
+            <!-- Image for policy statement -->
             <div class="row">
                 <div class="col-md-12 col-sm-12 container">
                     <h1 class="text-white centered"> <span>ONLINE</span>
@@ -197,7 +202,6 @@
         </div>
 
         <!-- <img class="w-100" style="height: 200px;"  src="assets/img/banner/nrc.jpg" alt="board of director"> -->
-
 
         <div class="container mt-5">
             <div class="shadow-lg p-5 mb-5 bg-body rounded">
@@ -223,7 +227,8 @@
                             </div>
                             <br>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-success font-weight-bold align-center rounded"
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    class="btn btn-success font-weight-bold align-center rounded"
                                     style="width: 150px;">Confirm</button>
                             </div>
                         </form>
@@ -236,6 +241,148 @@
 
 
     </main><!-- End #main -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Online Policy Statement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="shadow p-3 mb-5 bg-body rounded">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Policy Holder"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Risk Date"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Policy Number"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Maturity"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Sum Assured"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Next Payment"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Ins. Prem"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Table & Term"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Ins. Mode"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" disabled placeholder="Status"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+
+                                <table class="table table-bordered table-sm">
+                                    <thead class="bg-success text-white font-weight-bold">
+                                        <tr>
+                                            <th scope="col">Inst. No.</th>
+                                            <th scope="col">PR. No.</th>
+                                            <th scope="col">PR Date</th>
+                                            <th scope="col">Prem. Amt.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>1200004545</td>
+                                            <td>26-AUG-04</td>
+                                            <td>4000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>1300004546</td>
+                                            <td>26-AUG-04</td>
+                                            <td>4000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>1200004646</td>
+                                            <td>26-AUG-04</td>
+                                            <td>4000</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot class="table-success table-borderless" colspan="3">
+                                        <tr>
+                                            <td colspan="3">Total</td>
+
+                                            <td>42120</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
