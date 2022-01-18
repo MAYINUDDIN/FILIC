@@ -1206,7 +1206,7 @@ transition: 1s;
 }
 .contact .info i {
   font-size: 20px;
-  color: #f03c02;
+  color: #05ad21;
   float: left;
   width: 44px;
   height: 44px;
@@ -1231,7 +1231,7 @@ transition: 1s;
   color: #65534c;
 }
 .contact .info:hover i {
-  background: #f03c02;
+  background: #05ad21;
   color: #fff;
 }
 .contact .php-email-form {
@@ -1246,7 +1246,7 @@ transition: 1s;
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #05ad21;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1292,7 +1292,7 @@ transition: 1s;
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #f03c02;
+  background: #05ad21;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1300,7 +1300,7 @@ transition: 1s;
   border-radius: 4px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #fd5c28;
+  background: #05ad21;
 }
 @-webkit-keyframes animate-loading {
   0% {
